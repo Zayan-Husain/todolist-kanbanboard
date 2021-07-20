@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+}
+h5 {
+    margin: 0 !important;
+}
+.zebra:nth-child(odd) {
+    background-color: blue;
+}
+.zebra:nth-child(even) {
+    background-color: red;
+}
+
+.todo_item {
+    padding: 5px 25px
+}
+.edittodo {
+    margin-right: 35px;
+    display: block;
+}
+.statustodo {
+    display: block;
+}
+.todoeditbtns {
+    height: 93px;
+    display: block;
+}

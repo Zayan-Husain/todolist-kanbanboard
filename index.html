@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SQL To-Do List</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col s12">
+				<ul class="tabs">
+					<li class="tab col s3"><a href="#todos" class="active">Haven't started it</a></li>
+					<li class="tab col s3"><a href="#working" class="active">Working on it</a></li>
+					<li class="tab col s3"><a href="#finished" class="active">finished it</a></li>
+					<li class="tab col s3"><a href="#problems" class="active">have problems with it</a></li>
+				</ul>
+			</div>
+			<div id="todos" class="col s12">todos</div>
+			<div id="working" class="col s12">working</div>
+			<div id="finished" class="col s12">finished</div>
+			<div id="problems" class="col s12">problems</div>
+		</div>
+	</div>
+
+	<!-- Modals -->
+	<div id="editstatus" class="modal">
+		<div class="modal-content">
+			<h4>Edit Todo Status</h4>
+			<select id="editstatusselect" class="browser-default">
+				<option value="todo">Haven't started it.</option>
+				<option value="working">Working on it.</option>
+				<option value="finished">Finished it.</option>
+				<option value="problem">Have problems with it.</option>
+			</select>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="modal-close green btn submiteditstatus">Submit</a>
+			<a href="#" class="btn modal-close red darken-3">close</a>
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
