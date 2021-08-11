@@ -7,6 +7,7 @@
 	<title>SQL To-Do List</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 	<div class="container">
@@ -18,6 +19,7 @@
 					<li class="tab col s3"><a href="#finished" class="active">finished it</a></li>
 					<li class="tab col s3"><a href="#problems" class="active">have problems with it</a></li>
 				</ul>
+				<a href="#createtodo" class="btn modal-trigger createtodotrigger" style="margin: 5px 0;">Create Todo</a>
 			</div>
 			<div id="todos" class="col s12">todos</div>
 			<div id="working" class="col s12">working</div>
@@ -40,6 +42,43 @@
 		<div class="modal-footer">
 			<a href="#!" class="modal-close green btn submiteditstatus">Submit</a>
 			<a href="#" class="btn modal-close red darken-3">close</a>
+		</div>
+	</div>
+	<div id="createtodo" class="modal">
+		<div class="modal-content">
+			<h4>Create Todo</h4>
+			<p style="display: inline-block; margin-right: 7px;">Title:</p><input type="text" id="createtodotitle" class="browser-default" autocomplete="off" style="display: inline-block;">
+			<p>Content: </p><textarea id="createtodocontent"></textarea>
+			<select id="createtodostatusselect" class="browser-default">
+				<option value="todo">Haven't started it.</option>
+				<option value="working">Working on it.</option>
+				<option value="finished">Finished it.</option>
+				<option value="problem">Have problems with it.</option>
+			</select>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="modal-close green btn submitaddtodo">Submit</a>
+			<a href="#" class="btn modal-close red darken-3">close</a>
+		</div>
+	</div>
+	<div id="edittodo" class="modal">
+		<div class="modal-content">
+			<h4>Edit Todo</h4>
+			<p style="display: inline-block; margin-right: 7px;">Title:</p><input type="text" id="edittodotitle" class="browser-default" autocomplete="off" style="display: inline-block;">
+			<p>Content: </p><textarea id="edittodocontent"></textarea>
+			<div class="colordiv valign-wrapper">
+				<input type="color" id="edittodocolor">
+				<span id="color_front"></span>
+				<span class="color_recent c1"></span>
+				<span class="color_recent c2"></span>
+				<span class="color_recent c3"></span>
+				<span class="color_recent c4"></span>
+				<span class="color_recent c5"></span>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="modal-close green btn submitedittodo">Submit</a>
+			<a href="#!" class="btn modal-close red darken-3">close</a>
 		</div>
 	</div>
 	

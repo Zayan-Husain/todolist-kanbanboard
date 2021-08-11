@@ -1,31 +1,93 @@
 body {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
 }
 p {
-    margin: 0;
+	margin: 0;
 }
 h5 {
-    margin: 0 !important;
+	margin: 0 !important;
 }
-.zebra:nth-child(odd) {
-    background-color: blue;
+/* .zebra:nth-child(odd) {
+	background-color: rgba(0, 0, 255, 0.65);
 }
 .zebra:nth-child(even) {
-    background-color: red;
-}
+	background-color: rgba(255, 0, 0, 0.65);
+} */
 
 .todo_item {
-    padding: 5px 25px
+	padding: 12px !important;
+	margin-bottom: 12px !important;
+	border-radius: 20px;
+	background-color: #c1deda;
 }
 .edittodo {
-    margin-right: 35px;
-    display: block;
+	margin-right: 20px;
+	display: block;
 }
 .statustodo {
-    display: block;
+	display: block;
+	margin-right: 20px;
 }
 .todoeditbtns {
-    height: 93px;
-    display: block;
+	height: 93px;
+	display: block;
 }
+.notodosintab {
+	color:rgba(144, 144, 144, 0.712);
+	text-align: center;
+	display: block;
+	width: inherit;
+	margin-top: 10px;
+}
+
+input#edittodocolor[type=color] {
+    display: none;
+}
+#color_front {
+	border: 5px solid black;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px; 
+	background-color:red;
+	display:inline-block;
+	cursor: pointer;
+}
+.color_recent {
+	border: 5px solid black;
+	border-radius: 15px;
+	width: 80px;
+	height: 40px; 
+	background-color:#c1deda;
+	display:inline-block;
+	margin-left: 15px;
+	cursor: pointer;
+}
+.colordiv {
+	margin-top: 15px;
+}
+
+/* buttons epic */
+
+/* .fluid-btn {
+	flex: 1;
+	padding: 25px 50px;
+	margin: 25px;
+	border-radius: 999px;
+	border: 5px solid #284cff;
+	font-family: "VT323", monospace;
+	font-size: 25px;
+	text-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+	white-space: nowrap;
+	color: #fff;
+	background: transparent;
+	background-image: url(https://web.archive.org/web/20160312084140im_/http://splatoon.nintendo.com/assets/img/nav-bg-fill-blue.png?1443460871);
+	background-repeat: repeat-x;
+	background-position: 0 -100%;
+	transition: 1.5s ease;
+} */
+/* .fluid-btn:hover {
+	background-position: 500% 100%;
+} */
